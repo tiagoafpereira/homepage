@@ -1,5 +1,7 @@
 # config.yml
 
+publish_mode: editorial_workflow
+
 backend:
   name: github
   repo: tiagoafpereira/homepage
@@ -13,6 +15,7 @@ collections:
     folder: '_posts/'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    preview_path: 'blog/{{slug}}'
     editor:
       preview: false
     fields:
